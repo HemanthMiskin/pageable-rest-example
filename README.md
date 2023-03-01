@@ -4,10 +4,10 @@
 -Please visit mysql official image page https://hub.docker.com/_/mysql for more details.
 
 -Run below command in terminal to bring-up the mysql container.
-docker run --name mysql -p 3306:3306 --restart always -e MYSQL_ROOT_PASSWORD=payconiq -d mysql
+docker run --name mysql -p 3306:3306 --restart always -e MYSQL_ROOT_PASSWORD=password -d mysql
 -Access the container bash
 docker exec -it mysql bash
--Connect to MySQL DB (password is 'payconiq' )
+-Connect to MySQL DB (password is 'password' )
 mysql -h 127.0.0.1 -P 3306 --protocol=tcp -p
 -Create database “stocks” 
 create database stocks;
